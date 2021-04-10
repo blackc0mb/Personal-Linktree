@@ -1,0 +1,99 @@
+:root {
+   --general-font-family: 'Noto Sans', sans-serif;
+   --general-background-color: #F3F3F3;
+   --general-font-color: #0F1F38;
+   --button-color: #0F1F38;
+
+   /* --general-background-color: #F3F3F3;
+   --general-font-color: #082340;
+   --button-color: #082340;    */
+}
+
+* {
+   box-sizing: border-box;
+   font-family: var(--general-font-family);
+}
+
+html, body, footer, section, div, a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+   background-color: var(--general-background-color);
+   color: var(--general-font-color);
+}
+
+body {
+   line-height: 1;
+}
+
+.avatar {
+   margin-bottom: 10px;
+}
+
+.avatar-img {
+   width: 120px;
+   height: 120px;
+   border-radius: 50px;
+   border: 1px solid var(--general-font-color);
+}
+
+h1 {
+   font-size: 2.2rem;
+   font-weight: 800;
+}
+
+main {
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   flex-direction: column;
+   max-width: 360px;
+   margin: 0px auto;
+}
+
+.button-group {
+   width: 100%;
+}
+
+.button-group {
+   background-color: var(--button-color);
+   text-align: center;
+   font-weight: 600;
+   margin: 10px 0;
+   border-radius: 10px;
+   width: 100%;
+}
+
+.button-group a {
+   text-decoration: none;
+   color: var(--general-background-color);
+}
+
+.button-label {
+   padding: 20px 0;
+   transition: all 0.3s;
+}
+
+.button-label:hover {
+   transform: scale(1.1);
+}
+
+.divider {
+   height: 2px;
+   background-color: var(--general-font-color);
+   width: 320px;
+   margin-top: 10px;
+}
+
+.footer {
+   text-align: center;
+   font-weight: 600;
+   padding-top: 20px;
+   line-height: 1.5rem;
+}
