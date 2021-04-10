@@ -14,7 +14,7 @@
    font-family: var(--general-font-family);
 }
 
-html, body, footer, section, div, a {
+html, body, footer, section, div, h3, a, p {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -57,8 +57,12 @@ main {
    margin: 0px auto;
 }
 
-.button-group {
+.button-group, #about  {
    width: 100%;
+}
+
+#about a {
+   cursor: pointer;
 }
 
 .button-group {
@@ -84,16 +88,42 @@ main {
    transform: scale(1.1);
 }
 
-.divider {
+.about {
+   text-align: center;
+   padding: 20px 0 10px 0;
+   font-size: 0.95rem;
+   line-height: 1.8rem;
+   display: none;
+   transition-property: opacity, left, top, height;
+   transition: 3s, 5s;   
+}
+
+.divider, .divider-none {
    height: 2px;
    background-color: var(--general-font-color);
    width: 320px;
-   margin-top: 10px;
+   margin-top: 15px;
 }
 
-.footer {
+.divider-none {
+   display: none;
+}
+
+.footer {   
    text-align: center;
    font-weight: 600;
    padding-top: 20px;
    line-height: 1.5rem;
+   transition: all 0.3s;
+}
+
+.footer-social-link {
+   display: inline-flex;
+   padding: 8px;
+   text-decoration: none;
+   color: var(--general-font-color);   
+}
+
+.footer a:hover {
+   transform: scale(1.1);
 }
