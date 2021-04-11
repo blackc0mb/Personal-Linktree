@@ -1,3 +1,29 @@
+let show_about = document.getElementById('text-about'),
+link_about = document.getElementById('link-about'),
+about_divider = document.getElementById("about-divider");
+
+show_about.classList.add('visuallyhidden');
+
+link_about.addEventListener('click', function () {
+   if (show_about.classList.contains('hidden')) {
+      show_about.classList.remove('hidden');
+      about_divider.classList.remove('hidden');
+      setTimeout(function () {
+         show_about.classList.remove('visuallyhidden');
+      }, 20);
+   } else {
+      show_about.classList.add('visuallyhidden');
+      show_about.addEventListener('transitionend', function (e) {
+         show_about.classList.add('hidden');
+         about_divider.classList.add('hidden');
+      }, {
+         capture: false,
+         once: true,
+         passive: false
+      });
+   }
+}, false);
+
 // const show_about = document.getElementById("text-about");
 // const link_about = document.getElementById("link-about");
 // const about_divider = document.getElementById("about-divider");
@@ -16,27 +42,3 @@
 //       about_divider.style.display = "none";      
 //    }
 // });
-
-
-let show_about = document.getElementById('text-about'),
-link_about = document.getElementById('link-about');
-
-show_about.classList.add('visuallyhidden');
-
-link_about.addEventListener('click', function () {
-   if (show_about.classList.contains('hidden')) {
-      show_about.classList.remove('hidden');
-      setTimeout(function () {
-         show_about.classList.remove('visuallyhidden');
-      }, 20);
-   } else {
-      show_about.classList.add('visuallyhidden');
-      show_about.addEventListener('transitionend', function (e) {
-         show_about.classList.add('hidden');
-      }, {
-         capture: false,
-         once: true,
-         passive: false
-      });
-   }
-}, false);

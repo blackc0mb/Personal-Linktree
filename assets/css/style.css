@@ -93,7 +93,6 @@ main {
    padding: 20px 0 10px 0;
    font-size: 0.95rem;
    line-height: 1.8rem;
-   /*display: none;*/
 
    /*transition: all 0.5s linear;*/
    transition: all 1s ease-in-out;   
@@ -107,32 +106,28 @@ main {
    opacity: 0;
 }
 
-.divider, .divider-none {
+.line-divider {
    height: 2px;
    background-color: var(--general-font-color);
    width: 320px;
    margin-top: 15px;
 }
 
-.divider-none {
-   display: none;
-}
-
 .footer {   
    text-align: center;
    font-weight: 600;
    padding-top: 20px;
-   line-height: 1.5rem;
-   transition: all 0.3s;
+   line-height: 1.5rem;   
 }
 
 .footer-social-link {
    display: inline-flex;
    padding: 8px;
    text-decoration: none;
-   color: var(--general-font-color);   
+   color: var(--general-font-color);
+   transition: all 0.3s;
 }
 
 .footer a:hover {
-   transform: scale(1.1);
+   transform: translate(0px, -5px);
 }
