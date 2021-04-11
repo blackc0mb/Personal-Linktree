@@ -93,9 +93,18 @@ main {
    padding: 20px 0 10px 0;
    font-size: 0.95rem;
    line-height: 1.8rem;
+   /*display: none;*/
+
+   /*transition: all 0.5s linear;*/
+   transition: all 1s ease-in-out;   
+}
+
+.hidden {
    display: none;
-   transition-property: opacity, left, top, height;
-   transition: 3s, 5s;   
+}
+ 
+.visuallyhidden {
+   opacity: 0;
 }
 
 .divider, .divider-none {
