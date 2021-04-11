@@ -24,9 +24,6 @@ link_about = document.getElementById('link-about');
 show_about.classList.add('visuallyhidden');
 
 link_about.addEventListener('click', function () {
-   console.log('entro al click');
-   console.log(show_about.classList.contains('hidden'));
-
    if (show_about.classList.contains('hidden')) {
       show_about.classList.remove('hidden');
       setTimeout(function () {
