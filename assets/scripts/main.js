@@ -1,9 +1,11 @@
+//Show-hide declarations
 let show_about = document.getElementById('text-about'),
 link_about = document.getElementById('link-about'),
-about_divider = document.getElementById("about-divider"),
-check_lang = document.getElementById("check-lang");
+about_divider = document.getElementById("about-divider");
 
-let current_lang = "";
+//Toggle language declarations
+let current_lang = "",
+check_lang = document.getElementById("check-lang");
 
 let label_en = {
    l_blog: "Blog",
@@ -19,6 +21,7 @@ let label_es = {
    l_about_content: "Hola, mi nombre es Tonatiuh Morales y actualmente trabajo principalmente con plataformas SAP desde hace ya varios años, también le hago un poco al desarrollo de software en mi tiempo libre (al menos lo intento).</br>Gracias por visitar!"
 };
 
+//Show-hide de about section
 show_about.classList.add('visuallyhidden');
 
 link_about.addEventListener('click', function () {
@@ -41,11 +44,12 @@ link_about.addEventListener('click', function () {
    }
 }, false);
 
+//Toggle language function
 check_lang.addEventListener('click', function () {
-   current_lang = check_lang.checked === true ? "en" : "es";
-
    let lang = {};
    let myLabels = document.querySelectorAll("[id^='l_']");
+
+   current_lang = check_lang.checked === true ? "en" : "es";
 
    switch (current_lang) {
       case "es":
