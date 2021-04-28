@@ -11,7 +11,7 @@ let label_en = {
    l_blog: "Blog",
    l_password: "Password Generator",
    l_about: "About",
-   l_about_content: "Hello, my name is Tonatiuh Morales and I currently work mainly with SAP platforms for several years now, I also do a bit of software development in my spare time (at least I try). </br>Thanks for visiting!"
+   l_about_content: "Hello, my name is Tonatiuh Morales and currently I work mainly with SAP platforms for several years, also I'm a developer in my free time (at least I try it). </br>Thanks for visiting!"
 };
 
 let label_es = {
