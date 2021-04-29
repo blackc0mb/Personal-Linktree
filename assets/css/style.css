@@ -3,6 +3,8 @@
    --general-background-color: #F3F3F3;
    --general-font-color: #0F1F38;
    --button-color: #0F1F38;
+   --line-header-color-light: lightgray;
+   --line-header-color-darken: hsl(0, 0%, 25%);
 
    /* --general-background-color: #F3F3F3;
    --general-font-color: #082340;
@@ -33,7 +35,8 @@ body {
 }
 
 .avatar {
-   margin-bottom: 10px;
+   margin-top: 20px;
+   margin-bottom: 0px;
 }
 
 .avatar-img {
@@ -44,23 +47,27 @@ body {
 }
 
 .lang-toggle {
-   color: red;
+   max-width: 360px;
+   color: #385898;
    padding: 10px;
-   /*transition: all 0.3s;*/
+
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
 }
 
 .lang-toggle:hover {
    cursor: pointer;
-   color:var(--general-font-color);
-   /*transform: scale(1.1);*/
+   text-decoration: underline;
 }
 
 /* Language switch-ini */
 .lang-content {
    width: 100%;
+   border-bottom: 1px solid var(--line-header-color-light);
    max-width: 360px;
    padding-top: 0px;
-   padding-bottom: 20px;
+   padding-bottom: 0px;
    color: var(--general-font-color);
    font-size: small;
    font-weight: 600;
