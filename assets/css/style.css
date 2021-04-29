@@ -43,6 +43,18 @@ body {
    border: 1px solid var(--general-font-color);
 }
 
+.lang-toggle {
+   color: red;
+   padding: 10px;
+   /*transition: all 0.3s;*/
+}
+
+.lang-toggle:hover {
+   cursor: pointer;
+   color:var(--general-font-color);
+   /*transform: scale(1.1);*/
+}
+
 /* Language switch-ini */
 .lang-content {
    width: 100%;

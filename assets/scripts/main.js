@@ -4,8 +4,8 @@ link_about = document.getElementById('link-about'),
 about_divider = document.getElementById("about-divider");
 
 //Toggle language declarations
-let current_lang = "",
-check_lang = document.getElementById("check-lang");
+let check_lang = document.getElementById("check-lang");
+link_toggle_lang = document.getElementById("link-toggle-lang");
 
 let label_en = {
    l_blog: "Blog",
@@ -48,8 +48,39 @@ link_about.addEventListener('click', function () {
 check_lang.addEventListener('click', function () {
    let lang = {};
    let myLabels = document.querySelectorAll("[id^='l_']");
+   let current_lang = "";
 
    current_lang = check_lang.checked === true ? "en" : "es";
+
+   switch (current_lang) {
+      case "es":
+         lang = label_es;
+         break;
+
+      case "en":
+         lang = label_en;
+         break;
+   };
+
+   for (let i = 0; i < myLabels.length; i++) {
+      myLabels[i].innerHTML = lang[myLabels[i].id];
+   };
+
+});
+
+link_toggle_lang.addEventListener('click', function () {
+   let lang = {};
+   let myLabels = document.querySelectorAll("[id^='l_']");
+   let current_lang = "es";
+
+   if (link_toggle_lang.innerHTML === "English") {
+      current_lang = "en";
+      link_toggle_lang.innerHTML = "Español";
+   }
+   else {
+      current_lang = "es";
+      link_toggle_lang.innerHTML = "English";
+   }
 
    switch (current_lang) {
       case "es":
