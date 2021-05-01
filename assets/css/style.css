@@ -49,7 +49,7 @@ body {
 .lang-toggle {
    max-width: 360px;
    color: #385898;
-   padding: 10px;
+   padding: 10px 5px 10px 10px;
 
    display: flex;
    justify-content: flex-end;
@@ -59,6 +59,11 @@ body {
 .lang-toggle:hover {
    cursor: pointer;
    text-decoration: underline;
+}
+
+.lang-toggle-icon {
+   color: #385898;
+   padding: 10px 10px 10px 0px;
 }
 
 /* Language switch-ini */

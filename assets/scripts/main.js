@@ -77,12 +77,12 @@ link_toggle_lang.addEventListener('click', function () {
 
    switch (current_lang) {
       case "es":
-         link_toggle_lang.innerHTML = 'English&nbsp;<i class="fa fa-language fa-2x"></i>';
+         link_toggle_lang.innerHTML = 'English';
          lang = label_es;
          break;
 
       case "en":
-         link_toggle_lang.innerHTML = 'Español&nbsp;<i class="fa fa-language fa-2x"></i>';
+         link_toggle_lang.innerHTML = 'Español';
          lang = label_en;
          break;
    };
