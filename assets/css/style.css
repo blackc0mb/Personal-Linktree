@@ -1,5 +1,5 @@
 :root {
-   --general-font-family: 'Noto Sans', sans-serif;
+   --general-font-family: 'Poppins', sans-serif;
    --general-background-color: #F3F3F3;
    --general-font-color: #0F1F38;
    --button-color: #0F1F38;
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-   line-height: 1;
+   line-height: 1.6;
 }
 
 .avatar {
